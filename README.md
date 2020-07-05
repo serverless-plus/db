@@ -1,8 +1,8 @@
 # @slsplus/db
 
 [![Build Status](https://travis-ci.com/serverless-plus/db.svg?branch=master)](https://travis-ci.com/serverless-plus/db)
-[![npm](https://img.shields.io/npm/v/%40slsplus%2F/db.svg)](http://www.npmtrends.com/%40slsplus%2F/db)
-[![NPM downloads](https://img.shields.io/npm/dm/%40slsplus%2F/db.svg)](http://www.npmtrends.com/%40slsplus%2F/db)
+[![npm](https://img.shields.io/npm/v/%40slsplus%2Fdb.svg)](http://www.npmtrends.com/%40slsplus%2Fdb)
+[![NPM downloads](https://img.shields.io/npm/dm/%40slsplus%2Fdb.svg)](http://www.npmtrends.com/%40slsplus%2Fdb)
 
 Serverless JSON database using
 [COS(Cloud Object Storage)](https://cloud.tencent.com/product/cos), forked by
