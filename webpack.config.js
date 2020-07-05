@@ -5,7 +5,7 @@ var banner = 'lowdb v' + pkg.version
 
 module.exports = {
   entry: {
-    low: './src/main.js',
+    slsdb: './src/main.js',
     LocalStorage: './src/adapters/LocalStorage'
   },
   output: {
