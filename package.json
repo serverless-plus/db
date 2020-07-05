@@ -2,6 +2,9 @@
   "name": "@slsplus/db",
   "version": "0.1.0",
   "description": "Serverless JSON database using COS(Cloud Object Storage)",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "serverless",
     "cos",
