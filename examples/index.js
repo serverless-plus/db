@@ -1,9 +1,9 @@
 const path = require('path')
-const slsdb = require('./src/main')
+const slsdb = require('@slsplus/db')
+const COSAsync = require('@slsplus/db/adapters/COSAsync')
 require('dotenv').config({ path: path.join(__dirname, '..', '.env') })
 
 async function main() {
-  const COSAsync = require('./src/adapters/COSAsync')
   const adapter = new COSAsync('serverless-db.json', {
     region: process.env.region,
     bucket: process.env.bucket,
