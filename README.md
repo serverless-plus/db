@@ -89,6 +89,7 @@ yarn add @slsplus/db
 
 A UMD build is also available on unpkg for testing and quick prototyping:
 
+```html
 <script src="https://unpkg.com/lodash/lodash.min.js"></script>
 <script src="https://unpkg.com/@slsplus/db/dist/slsdb.min.js"></script>
 <script src="https://unpkg.com/@slsplus/db/dist/LocalStorage.min.js"></script>
@@ -96,6 +97,7 @@ A UMD build is also available on unpkg for testing and quick prototyping:
   var adapter = new LocalStorage('db')
   var db = low(adapter)
 </script>
+```
 
 ## API
 
