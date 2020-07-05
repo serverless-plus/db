@@ -1,4 +1,8 @@
-# @slsplus/db
+# %40slsplus%2F/db
+
+[![Build Status](https://travis-ci.com/serverless-plus/db.svg?branch=master)](https://travis-ci.com/serverless-plus/db)
+[![npm](https://img.shields.io/npm/v/%40slsplus%2F/db.svg)](http://www.npmtrends.com/%40slsplus%2F/db)
+[![NPM downloads](https://img.shields.io/npm/dm/%40slsplus%2F/db.svg)](http://www.npmtrends.com/%40slsplus%2F/db)
 
 Serverless JSON database using
 [COS(Cloud Object Storage)](https://cloud.tencent.com/product/cos), forked by
@@ -7,13 +11,13 @@ Serverless JSON database using
 ## Usage
 
 ```sh
-npm install @slsplus/db --save
+npm install %40slsplus%2F/db --save
 ```
 
 ```js
-const slsdb = require('@slsplus/db');
+const slsdb = require('%40slsplus%2F/db');
 
-const COSAsync = require('@slsplus/db/adapters/COSAsync');
+const COSAsync = require('%40slsplus%2F/db/adapters/COSAsync');
 const adapter = new COSAsync('serverless-db.json', {
   region: 'COS region',
   bucket: 'COS bucket name with appid',
@@ -70,29 +74,29 @@ Actually, if you know Lodash, you already know how to use lowdb :wink:
 
 ## **Important**
 
-> - Because `@slsplus/db` interacts with cloud, so it's suggested to call
+> - Because `%40slsplus%2F/db` interacts with cloud, so it's suggested to call
 >   `write()` method(save data to cloud), after all database operations.
-> - `@slsplus/db` doesn't support Cluster and may have issues with very large
+> - `%40slsplus%2F/db` doesn't support Cluster and may have issues with very large
 >   JSON files (~200MB).
 
 ## Install
 
 ```sh
-npm install @slsplus/db --save
+npm install %40slsplus%2F/db --save
 ```
 
 Alternatively, if you're using [yarn](https://yarnpkg.com/)
 
 ```sh
-yarn add @slsplus/db
+yarn add %40slsplus%2F/db
 ```
 
 A UMD build is also available on unpkg for testing and quick prototyping:
 
 ```html
 <script src="https://unpkg.com/lodash/lodash.min.js"></script>
-<script src="https://unpkg.com/@slsplus/db/dist/slsdb.min.js"></script>
-<script src="https://unpkg.com/@slsplus/db/dist/LocalStorage.min.js"></script>
+<script src="https://unpkg.com/%40slsplus%2F/db/dist/slsdb.min.js"></script>
+<script src="https://unpkg.com/%40slsplus%2F/db/dist/LocalStorage.min.js"></script>
 <script>
   var adapter = new LocalStorage('db')
   var db = low(adapter)
@@ -310,7 +314,7 @@ creating and manipulating id-based resources.
 
 ```js
 const lodashId = require('lodash-id');
-const COSAsync = require('@slsplus/db/adapters/COSAsync');
+const COSAsync = require('%40slsplus%2F/db/adapters/COSAsync');
 
 const adapter = new COSAsync('serverless-db.json', {
   region: 'COS region',
@@ -351,7 +355,7 @@ const adapter = new COSAsync('serverless-db.json', {
 
 ## Limits
 
-`@slsplus/db` is a convenient method for storing data without setting up a
+`%40slsplus%2F/db` is a convenient method for storing data without setting up a
 database server. It is fast enough and safe to be used as an embedded database.
 
 However, if you seek high performance and scalability more than simplicity, you
